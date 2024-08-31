@@ -11,15 +11,15 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
   ]
 
   return (
-    <div className='flex flex-col shadow-xl z-10 relative'>
+    <div className='flex flex-col justify-center items-center shadow-xl z-10 relative'>
       <div className='flex flex-col justify-center items-center px-16 py-6 w-full bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-md:px-5 max-md:max-w-full'>
-        <div className='flex flex-col lg:flex-row w-full '>
-          <div className='flex gap-5 flex-col lg:flex-row justify-between'>
+        <div className='flex flex-col lg:flex-row w-full items-center justify-center '>
+          <div className='flex gap-5 px-8 lg:px-0 flex-col lg:flex-row justify-between'>
             <div className='flex flex-col w-[28%] max-md:ml-0 max-md:w-full'>
               <ContactTitle />
             </div>
             <div className='flex flex-col ml-5 w-[72%] max-md:ml-0 max-md:w-full'>
-              <div className='flex flex-col gap-6 self-stretch my-auto w-auto text-xl font-semibold text-center text-white max-md:mt-10 max-md:max-w-full max-sm:gap-20 max-sm:mb-auto'>
+              <div className='flex flex-col px-8 lg:px-0 gap-6 self-stretch my-auto w-auto text-xl font-semibold text-center text-white max-md:mt-10 max-md:max-w-full max-sm:gap-20 max-sm:mb-auto'>
                 <div className='flex gap-5 max-md:flex-col justify-center items-center'>
                   {contactButtons.map((button, index) => (
                     <ContactButton key={index} title={button.title} subtitle={button.subtitle} />

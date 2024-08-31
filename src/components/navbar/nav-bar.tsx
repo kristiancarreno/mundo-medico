@@ -12,9 +12,11 @@ function NavBar() {
       <Link href={'/'}>
         <Logo width={150} height={54} />
       </Link>
-      <div className='flex items-center w-1/2 justify-between gap-2'>
-        <div>
-          <Button className='rounded-3xl bg-primary-100 text-white'>Inicio</Button>
+      <div className='flex items-center w-1/2 justify-end lg:justify-between gap-2'>
+        <div className='hidden lg:flex'>
+          <Button className='border-primary-100 border-2 rounded-3xl bg-primary-100 hover:bg-primary-50 duration-300 text-white'>
+            Inicio
+          </Button>
         </div>
         <LocalSwitcher />
         <SearchBar />

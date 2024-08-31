@@ -1,6 +1,4 @@
 import React from 'react'
-import Oftalmology from './card-md'
-import Addictions from './vertica-lg-card'
 import HorizontalLgCard from './horizontal-lg-card'
 import VerticalLgCard from './vertica-lg-card'
 import CardMd from './card-md'
@@ -49,38 +47,38 @@ function ProductSection() {
         <Card
           title='Cirugia CardioVascular'
           text='- Sustitución de Válvula Aórtica
-- Revascularización Miocárdica
-- Sustitución Valvular Mitral'
+          - Revascularización Miocárdica
+          - Sustitución Valvular Mitral'
         />
         <Card
           title='Cirugia de Columna'
           text='- Hernia Discal Cervical
-- Hernia Discal Torácica
-- Cirugía para la Escoliosis'
+          - Hernia Discal Torácica
+          - Cirugía para la Escoliosis'
         />
         <Card
           title='Ortopedia'
           text='- Artroplastia de Rodilla
-- Artroplastia de cadera
-- Hallux Valgus Juanetes'
+          - Artroplastia de cadera
+          - Hallux Valgus Juanetes'
         />
         <Card
           title='Minimo Acceso'
           text='- Polipectomía Nasal
-- Ligaduras de Trompas
-- Resección de Próstata'
+          - Ligaduras de Trompas
+          - Resección de Próstata'
         />
         <Card
           title='Rehabilitacion'
           text='- Rehabilitacion de Hemiplejia
-- Lesiones Medulares
-- Enfermedades Degenerativas'
+          - Lesiones Medulares
+          - Enfermedades Degenerativas'
         />
         <Card
           title='Tercera Edad'
           text='- Evaluación del Adulto
-- Programa para Cuidadores
-- Riesgo Quirúrgico del Anciano'
+          - Programa para Cuidadores
+          - Riesgo Quirúrgico del Anciano'
         />
       </div>
     </div>

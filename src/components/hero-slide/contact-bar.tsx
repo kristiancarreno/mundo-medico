@@ -9,8 +9,8 @@ import Image from 'next/image'
 
 export const ContactBar = (): JSX.Element => {
   return (
-    <div className='flex justify-between gap-6 items-center w-full h-[89px] px-8 bg-white shadow-xl relative'>
-      <div className='flex gap-6 items-center'>
+    <div className='flex justify-between gap-6  items-center w-full h-[89px] px-4 lg:px-8 bg-white shadow-xl relative'>
+      <div className='flex justify-start gap-3 lg:gap-6 items-center'>
         <div className='flex items-center justify-center   w-[58px] h-[58px] top-[17px] bg-primary-100 rounded-[29px]'>
           <FacebookIco className='z-50' />
         </div>
@@ -27,7 +27,13 @@ export const ContactBar = (): JSX.Element => {
           <PhoneIco className='z-50' />
         </div>
       </div>
-      <Image src='/doctors.png' alt='hero-slide' className='absolute right-0 bottom-0 ' width={740} height={609} />
+      <Image
+        src='/doctors.png'
+        alt='hero-slide'
+        className='absolute hidden right-0 bottom-0 lg:block'
+        width={740}
+        height={609}
+      />
     </div>
   )
 }

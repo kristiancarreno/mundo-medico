@@ -4,6 +4,7 @@ import './globals.css'
 import NavBar from '@/components/navbar/nav-bar'
 import ServiceProviderSection from '@/components/service-provider/service-provider-section'
 import Footer from '@/components/footer/footer'
+import HeroBg from '@/components/hero-slide/hero-bg'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <NavBar />
+        <HeroBg />
         <main>{children}</main>
         <ServiceProviderSection />
         <Footer />

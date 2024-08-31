@@ -22,7 +22,10 @@ function HorizontalLgCard({ title, text }: Props) {
       <div className='flex flex-col gap-2 text-black w-[254px]'>
         <h2 className='text-xl font-semibold'>{title}</h2>
         <p className='text-xs font-medium'>{text}</p>
-        <Button className='rounded-3xl text-primary-100 w-[151px] h-[38px]' variant={'outline'}>
+        <Button
+          className='border-primary-100 border-2 rounded-3xl text-primary-100 w-[151px] h-[38px]'
+          variant={'outline'}
+        >
           ver mas
         </Button>
       </div>

@@ -13,7 +13,7 @@ const ServiceCard: React.FC<CardProps> = ({ title, description, icon }) => {
       <h2 className='self-center w-full text-xl font-bold leading-5 uppercase'>{title}</h2>
       <div className='bg-primary-100 rounded-full w-[110px] h-[110px] flex items-center justify-center'>{icon}</div>
       <p className='mt-6 text-sm font-medium'>{description}</p>
-      <Button className='rounded-3xl text-primary-100 w-full' variant={'outline'}>
+      <Button className='border-primary-100 border-2 rounded-3xl text-primary-100 w-full' variant={'outline'}>
         ver mas
       </Button>
     </article>
