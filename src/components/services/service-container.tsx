@@ -1,7 +1,9 @@
+'use client'
 import * as React from 'react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
-import { Stethoscope } from 'lucide-react'
+import { Stethoscope, GraduationCap, Hospital, Syringe } from 'lucide-react'
 import Service from './service'
+import Autoplay from 'embla-carousel-autoplay'
 
 const services = [
   {
@@ -10,29 +12,24 @@ const services = [
     icon: <Stethoscope width={45} height={52} color='white' />
   },
   {
-    title: 'Medicamentos cubanos',
+    title: 'Estudios Médicos',
+    description: 'Infórmate sobre todo lo relacionado a los estudios de medicina en Cuba.',
+    icon: <GraduationCap width={45} height={52} color='white' />
+  },
+  {
+    title: 'Medicamentos Cubanos',
     description: 'Aprende sobre los medicamentos producidos en Cuba y sus aplicaciones.',
-    icon: <Stethoscope width={45} height={52} color='white' />
+    icon: <Syringe width={45} height={52} color='white' />
   },
   {
     title: 'Hospitales',
     description: 'Conoce nuestros hospitales, sus respectivas especialidades y su localización.',
-    icon: <Stethoscope width={45} height={52} color='white' />
+    icon: <Hospital width={45} height={52} color='white' />
   },
   {
-    title: 'Programas Medicos',
-    description: 'Conoce sobre los servicios médicos que se ofrecen en Cuba y como acceder a ellos.',
-    icon: <Stethoscope width={45} height={52} color='white' />
-  },
-  {
-    title: 'Programas Medicos',
-    description: 'Conoce sobre los servicios médicos que se ofrecen en Cuba y como acceder a ellos.',
-    icon: <Stethoscope width={45} height={52} color='white' />
-  },
-  {
-    title: 'Programas Medicos',
-    description: 'Conoce sobre los servicios médicos que se ofrecen en Cuba y como acceder a ellos.',
-    icon: <Stethoscope width={45} height={52} color='white' />
+    title: 'Hospitales',
+    description: 'Conoce nuestros hospitales, sus respectivas especialidades y su localización.',
+    icon: <Hospital width={45} height={52} color='white' />
   }
 ]
 
@@ -40,8 +37,14 @@ export function ServiceCarousel() {
   return (
     <Carousel
       opts={{
-        align: 'start'
+        align: 'center',
+        loop: true
       }}
+      plugins={[
+        Autoplay({
+          delay: 4000
+        })
+      ]}
       className='w-full max-w-[1340px]'
     >
       <CarouselContent>
@@ -51,8 +54,10 @@ export function ServiceCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <div className='hidden md:block'>
+        <CarouselPrevious />
+        <CarouselNext />
+      </div>
     </Carousel>
   )
 }

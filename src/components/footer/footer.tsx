@@ -19,67 +19,62 @@ function Footer() {
         <div className='flex flex-col lg:flex-row gap-14 items-center mb-2'>
           <ul>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
+              <Link className='font-bold text-lg  text-white' href={'#'}>
                 Pago Online
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
+              <Link className='font-bold text-lg  text-white' href={'#'}>
                 Seguro de salud o viaje
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
+              <Link className='font-bold text-lg  text-white' href={'#'}>
                 Informacion sobre Cuba
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
+              <Link className='font-bold text-lg  text-white' href={'#'}>
                 Consulta Online
               </Link>
             </li>
           </ul>
           <ul>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Pago Online
+              <Link className='font-bold text-lg  text-white' href={'#'}>
+                Quienes Somos
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Seguro de salud o viaje
+              <Link className='font-bold text-lg  text-white' href={'#'}>
+                Regulaciones Aduanales
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Informacion sobre Cuba
+              <Link className='font-bold text-lg  text-white' href={'#'}>
+                Terminos y Condiciones
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Consulta Online
+              <Link className='font-bold text-lg  text-white' href={'#'}>
+                Especialidades medicas
               </Link>
             </li>
           </ul>
           <ul>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Pago Online
+              <Link className='font-bold text-lg  text-white' href={'#'}>
+                Politica de Pago
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Seguro de salud o viaje
+              <Link className='font-bold text-lg  text-white' href={'#'}>
+                Visa
               </Link>
             </li>
             <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Informacion sobre Cuba
-              </Link>
-            </li>
-            <li>
-              <Link className='font-bold text-lg underline text-white' href={'#'}>
-                Consulta Online
+              <Link className='font-bold text-lg  text-white' href={'#'}>
+                Noticias de Salud
               </Link>
             </li>
           </ul>

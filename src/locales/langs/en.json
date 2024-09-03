@@ -1,0 +1,11 @@
+{
+  "general": {
+    "home": "Home",
+    "cuba_travels": "Medical Travels to Cuba",
+    "welcome": "Welcome to Cuba Mundo Médico",
+    "priority": "Your well-being is our priority"
+  },
+  "sections": {
+    "programs_services": "Programs & Services"
+  }
+}

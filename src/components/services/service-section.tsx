@@ -1,13 +1,15 @@
+'use client'
 import React from 'react'
-import { GraduationCap, Hospital, Stethoscope, Syringe } from 'lucide-react'
-import Service from './service'
 import { ServiceCarousel } from './service-container'
+import { useTranslationClient } from '@/locales/client'
 
 function ServiceSection() {
+  const { t } = useTranslationClient()
   return (
-    <div className='flex flex-col lg:flex-row gap-4 items-center justify-center my-8'>
+    <section className='flex flex-col gap-4 items-center justify-center h-[100vh]  snap-always snap-center'>
+      <h1 className='text-3xl font-semibold pb-14 text-primary-100'>{t('sections.programs_services')}</h1>
       <ServiceCarousel />
-    </div>
+    </section>
   )
 }
 
