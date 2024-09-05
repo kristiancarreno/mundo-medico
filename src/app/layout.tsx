@@ -2,13 +2,12 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from '@/components/navbar/nav-bar'
-import ServiceProviderSection from '@/components/service-provider/service-provider-section'
 import Footer from '@/components/footer/footer'
 import HeroBg from '@/components/hero-slide/hero-bg'
 import { cookies } from 'next/headers'
 import { cookieI18Name, fallbackLng } from '@/locales/lang'
 import { I18NProvider } from '@/locales'
-import ContactSection from '@/components/contact-us/contact-section'
+import WhatsAppButton from '@/components/ui/WhatsappButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,14 +29,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <I18NProvider {...{ lng }}>
           <NavBar />
+          <WhatsAppButton />
           <main className='snap-y snap-mandatory overflow-y-scroll h-[calc(100vh-63px)]'>
             <div className='snap-always snap-center'>
               <HeroBg />
             </div>
             {children}
-            <div className='snap-always snap-center h-[calc(100vh-63px)] flex flex-col justify-between'>
-              <ServiceProviderSection />
-              <ContactSection />
+            <div className='snap-always snap-center'>
               <Footer />
             </div>
           </main>

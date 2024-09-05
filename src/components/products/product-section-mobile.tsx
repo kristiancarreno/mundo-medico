@@ -4,7 +4,7 @@ import Card from './card'
 
 function ProductSectionMobile() {
   return (
-    <div className='flex flex-col justify-start items-center gap-6 text-white bg-primary-100 py-16 h-full lg:h-[1425px] shadow-xl z-10'>
+    <div className='flex flex-col snap-always snap-center justify-start items-center gap-6 text-white bg-primary-100 py-16 h-full lg:h-[1425px] shadow-xl z-10'>
       <h1 className='font-extrabold text-5xl text-center'>Sitio Especializado en Turismo Medico en Cuba</h1>
       <div className='relative flex flex-col gap-4'>
         <VerticalLgCard
@@ -13,6 +13,7 @@ function ProductSectionMobile() {
           text='La cirugía plástica es la especialidad médica que mediante cirugía busca reconstruir las deformidades y corregir las deficiencias funcionales mediante la transformación del cuerpo humano. La palabra "plástica" es originaria del griego "plastikos" que significa moldear o transformar. La finalidad es que el paciente que ha nacido con un defecto congénito o ha sufrido un accidente...'
         />
         <VerticalLgCard
+          image='/facial-surgery.png'
           title='OFTALMOLOGIA'
           text='Instituto Cubano de Oftalmología Ramón Pando Ferrer constituye el centro de referencia tanto nacional como internacional. Los resultados de las investigaciones de Cuba en la especialidad de oftalmología junto con la experiencia de los médicos cubanos...'
         />

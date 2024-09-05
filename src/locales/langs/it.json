@@ -1,6 +1,9 @@
 {
   "general": {
     "home": "Home",
+    "hospitals": "Ospedali",
+    "about_us": "Chi siamo",
+    "programs": "Programmi",
     "cuba_travels": "Viaggi Medici a Cuba",
     "welcome": "Benvenuti a Cuba Mundo Médico",
     "priority": "Il tuo benessere è la nostra priorità"

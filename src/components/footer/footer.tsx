@@ -88,7 +88,7 @@ function Footer() {
           <p className='font-semibold text-white text-lg text-wrap'>
             No dude en contactarnos por cualquier inquietud Equipo CUBAMUNDOMEDICO
           </p>
-          <div className='flex flex-col lg:flex-row items-center gap-8'>
+          <div className='hidden flex-row lg:flex items-center gap-8'>
             <FacebookIco />
             <LinkedinIco />
             <WhatsappIco />

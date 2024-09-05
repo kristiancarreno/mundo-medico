@@ -5,9 +5,9 @@ import Logo from '../../../public/icons/logo'
 import Link from 'next/link'
 import SearchBar from './search-bar'
 import SideBar from './side-bar'
-import { Button } from '../ui/button'
 import { LocalSwitcher } from './local-switcher'
 import { useTranslationClient } from '@/locales/client'
+import { ChartBar, HomeIcon, Hospital, Info } from 'lucide-react'
 
 function NavBar() {
   const { t } = useTranslationClient()
@@ -16,12 +16,25 @@ function NavBar() {
       <Link href={'/'}>
         <Logo width={150} height={54} />
       </Link>
-      <div className='flex items-center w-1/2 justify-end lg:justify-between gap-2'>
-        <div className='hidden lg:flex'>
-          <Button className='border-primary-100 border-2 rounded-3xl bg-primary-100 hover:bg-primary-50 duration-300 text-white'>
-            {t('general.home')}
-          </Button>
-        </div>
+      <div className='hidden lg:flex items-center gap-10'>
+        <Link href={'/'} className='flex text-sm gap-1 text-primary-100 hover:text-teal-700 duration-300'>
+          <HomeIcon size={20} />
+          {t('general.home')}
+        </Link>
+        <Link href={'/'} className='flex text-sm gap-1 text-primary-100 hover:text-teal-700 duration-300'>
+          <Hospital size={20} />
+          {t('general.hospitals')}
+        </Link>{' '}
+        <Link href={'/'} className='flex text-sm gap-1 text-primary-100 hover:text-teal-700 duration-300'>
+          <Info size={20} />
+          {t('general.about_us')}
+        </Link>
+        <Link href={'/'} className='flex text-sm gap-1 text-primary-100 hover:text-teal-700 duration-300'>
+          <ChartBar size={20} />
+          {t('general.programs')}
+        </Link>
+      </div>
+      <div className='flex items-center  justify-end  gap-2'>
         <LocalSwitcher />
         <SearchBar />
         <SideBar />
