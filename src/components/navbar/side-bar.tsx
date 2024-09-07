@@ -22,7 +22,7 @@ function SideBar() {
         <DrawerTrigger>
           <MenuIcon />
         </DrawerTrigger>
-        <DrawerContent className='h-full z-[200] text-primary-100 w-1/4'>
+        <DrawerContent className='h-full z-[200] text-primary-100 w-[200px] lg:w-1/4'>
           <DrawerHeader className='text-center'>
             <DrawerTitle>{t('general.welcome')}</DrawerTitle>
           </DrawerHeader>
@@ -77,7 +77,7 @@ function SideBar() {
             </AccordionItem>
           </Accordion>
           <DrawerFooter>
-            <div className='text-base font-medium  leading-10'>
+            <div className='hidden lg:block text-base font-medium  leading-10'>
               <a href='mailto:solicitud@cubamundomédico.com'>solicitud@cubamundomédico.com</a>
               <br />
               +53 5 2730507

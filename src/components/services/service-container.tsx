@@ -45,7 +45,7 @@ export function ServiceCarousel() {
           delay: 4000
         })
       ]}
-      className='w-full max-w-[1340px]'
+      className='w-full flex justify-center max-w-[1340px]'
     >
       <CarouselContent>
         {services.map((service, index) => (

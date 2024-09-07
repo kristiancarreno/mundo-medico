@@ -7,7 +7,7 @@ async function HeroBg() {
   return (
     <div className='flex flex-col'>
       <section className='hero-slide'>
-        <div className='flex flex-col gap-1 lg:gap-5 relative p-8 ml-4 lg:ml-16 justify-center'>
+        <div className='flex flex-col gap-1 lg:gap-5 relative p-8 ml-4 lg:ml-4 justify-center'>
           <div className=''>
             <span className='text-white text-xl lg:text-[58px] font-extrabold  uppercase leading-[73px]'>
               {t('general.cuba_travels')}

@@ -5,9 +5,16 @@ import ProductSection from './products-section'
 import ProductSectionMobile from './product-section-mobile'
 
 function ProductsToOffer() {
-  const { isDesktop, isMobile } = useWindowDimensions()
-
-  return isDesktop ? <ProductSection /> : <ProductSectionMobile />
+  return (
+    <div>
+      <div className='hidden lg:block'>
+        <ProductSection />
+      </div>
+      <div className='lg:hidden'>
+        <ProductSectionMobile />
+      </div>
+    </div>
+  )
 }
 
 export default ProductsToOffer

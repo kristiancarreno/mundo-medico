@@ -5,7 +5,7 @@ type Props = {
 }
 function Service({ src }: Props) {
   return (
-    <div className='w-[198px] h-[54px]'>
+    <div className='w-full h-full'>
       <Image src={src} alt='facial-surgery' width={198} height={100} />
     </div>
   )

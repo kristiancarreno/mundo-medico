@@ -21,7 +21,7 @@ function NavBar() {
           <HomeIcon size={20} />
           {t('general.home')}
         </Link>
-        <Link href={'/'} className='flex text-sm gap-1 text-primary-100 hover:text-teal-700 duration-300'>
+        <Link href={'/hospitals'} className='flex text-sm gap-1 text-primary-100 hover:text-teal-700 duration-300'>
           <Hospital size={20} />
           {t('general.hospitals')}
         </Link>{' '}

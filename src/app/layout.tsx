@@ -8,6 +8,8 @@ import { cookies } from 'next/headers'
 import { cookieI18Name, fallbackLng } from '@/locales/lang'
 import { I18NProvider } from '@/locales'
 import WhatsAppButton from '@/components/ui/WhatsappButton'
+import ServiceProviderSection from '@/components/service-provider/service-provider-section'
+import ContactSection from '@/components/contact-us/contact-section'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,6 +37,9 @@ export default function RootLayout({
               <HeroBg />
             </div>
             {children}
+            <div className='snap-always snap-center  flex flex-col justify-center'>
+              <ServiceProviderSection />
+            </div>
             <div className='snap-always snap-center'>
               <Footer />
             </div>
